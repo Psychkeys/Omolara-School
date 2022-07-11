@@ -1,0 +1,248 @@
+{% load static %}
+
+
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Omolara | News </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700' %}"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Presento - v3.7.0
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <h1 class="logo me-auto"><a href="{% url 'index' %}">OMO<span>LARA</span></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto " href="{% url 'index' %}">Home</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'index' %}">About</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'index' %}">Admission</a></li>
+                    <li><a class="nav-link scrollto " href="{% url 'index' %}">News</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'index' %}">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            <a href="{% url 'index' %}" class="get-started-btn scrollto">Get Started</a>
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
+
+                <ol>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'news' %}">Events</a></li>
+                </ol>
+                <h2>Events</h2>
+
+            </div>
+        </section><!-- End Breadcrumbs -->
+
+        <!-- ======= Blog Single Section ======= -->
+        <section id="blog" class="blog">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row">
+
+                    <div class="col-lg-8 entries">
+
+                        <article class="entry entry-single">
+
+                            <div class="entry-img">
+                                <img src="{% static 'assets/img/news.jpg' %}" alt="" class="img-fluid">
+                            </div>
+
+                            <h2 class="entry-title">
+                                <a href="blog-single.html">School Events</a>
+                            </h2>
+
+                            <div class="entry-meta">
+                                <ul>
+                                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a
+                                            href="blog-single.html">Adubi Paul</a></li>
+                                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a
+                                            href="blog-single.html"><time datetime="2020-01-01">Feb 11, 2022</time></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="entry-content">
+                                <h3 class="entry-title">Sports and Games</h3>
+                                <p>
+                                    It is that time of the school year, where we have fun by participating
+                                    inextracurricular events. We believe that you are as excited about this as we are.
+                                </p>
+
+                                <p>
+                                    This is another opportunity for our students and kids to have fun and learn at the
+                                    same time by participating in various extracurricular activities and sports.
+                                </p>
+
+                                <blockquote>
+                                    <p>
+                                        Sports for kids and young students is not only fun, it helps to build positive
+                                        character and develop great attitude
+                                    </p>
+                                </blockquote>
+
+                                <p>
+                                    There are so many health benefits of sports as an activity for students. Sports and
+                                    exercises must be encouraged across all levels of learning. It is important that in
+                                    as much as students are
+                                    having fun learning in the classroom, they must engage in outdoor and physical
+                                    activities to keep them active and happy.
+                                </p>
+
+                                <h3>Physical & Mental Health Benefits</h3>
+                                <p>
+                                    Exercise makes kids healthier and happier. Active kids have stronger immune systems,
+                                    strong cardiovascular, respiratory systems, bone and muscular structure.
+
+                                </p>
+                                <p>
+                                    Exercise improves blood flow, ensuring that more oxygen reaches the heart and brain,
+                                    promoting higher energy levels. Activities also makes kids breathe and perspire more
+                                    efficiently, which helps to naturally remove toxins from the body.
+                                </p>
+                                <img src="{% static 'assets/img/sports.jpg' %}" class="img-fluid" alt="">
+
+                                <h3> </h3>
+                                <p>
+                                    A healthy body leads to a healthy mind - we have lean from studies active kids
+                                    also enjoy better mental health, including better memory, ability to focus and
+                                    concentrate for longer hours. More confidence and improved social skills. It helps
+                                    improve confidence, ability to work well in a team, and develop better social
+                                    skills.
+
+                                    When kids have high self-esteem, they are more likely to be happier, more optimistic
+                                    and more inclined to assume
+                                    leadership roles.
+                                </p>
+                                <p>
+                                    Subscribe to our Newsletter to receive notifications for all events.
+                                </p>
+
+                            </div>
+                        </article><!-- End blog entry -->
+
+                    </div><!-- End blog entries list -->
+
+                    <div class="col-lg-4">
+
+                        <div class="sidebar">
+
+                            <h3 class="sidebar-title">Search</h3>
+                            <div class="sidebar-item search-form">
+                                <form action="">
+                                    <input type="text">
+                                    <button type="submit"><i class="bi bi-search"></i></button>
+                                </form>
+                            </div><!-- End sidebar search formn-->
+                        </div><!-- End sidebar recent posts-->
+                    </div><!-- End sidebar tags-->
+
+                </div><!-- End sidebar -->
+
+            </div><!-- End blog sidebar -->
+
+        </section><!-- End Blog Single Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        {% for message in messages %}
+                        <div class="alert alert-success">
+                            {{ message }}
+                        </div>
+                        {% endfor %}
+                        <h4>Join Our Newsletter</h4>
+                        <p>Subscribe to our newsletter for news and updates</p>
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+            <div class="social-links text-center text-md-end pt-3 pt-md-0">
+                <a href="https://wa.link/5kg2e6" target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://web.facebook.com/me/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/omolaraschoolng/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

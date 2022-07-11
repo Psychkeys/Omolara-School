@@ -1,0 +1,28 @@
+{% extends 'partials/base.html' %}
+{% block title %} Mail Page {% endblock %}
+
+
+{% load crispy_forms_tags %}
+{% block content %}
+
+    <div class="container">
+        <div class="card-body">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">
+                        Join today  
+                    </legend>
+                    {{ form|crispy }}
+                </fieldset>
+                <div class="border-top pt-3">
+                    <small class="text-muted">
+                        Already Have An Account? <a href="#" class="ml-2">Sign In</a>
+                    </small>
+                </div>
+                <button class="btn-newsletter" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

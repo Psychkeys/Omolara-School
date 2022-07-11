@@ -1,0 +1,643 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Omolara Schools | Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i' %}" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="{% url 'index' %}">OMO<span>LARA</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Admission</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'events' %}">Events</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'news' %}">News</a></li>
+          <li><a class="nav-link scrollto " href="#faq">FAQs</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#about" class="get-started-btn scrollto">Get Started</a>
+    </div>
+  </header><!-- End Header -->
+  
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <div class="col-xl-6">
+          <h1>Give your child the best</h1>
+          <h2>Every child deserves a quality and well-rounded education in their formative years</h2>
+          <a href="#about" class="btn-get-started scrollto">Read More</a>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch">
+            <div class="content">
+              <h3>We are committed to building effective leaders for a diverse world </h3>
+              <p>
+                We are passionate about building young scholars who are not just sound academically, but also of great character. Therefore we have built a learning citadel with strong core values.
+              </p>
+              <a href="#" class="about-btn"><span>About us</span> <i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Discipline</h4>
+                  <p>We strongly believe every child can be guided along the path of greatness through discipline.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Integrity</h4>
+                  <p>We are people of integrity. This is a very strong part of our core values</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-images"></i>
+                  <h4>Moral Standard</h4>
+                  <p>We also believe that morals is a fundamental part of the soceity that should not be lacking. As a institution of learning we promote the learning of morals for our kids</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <h4>Academic Excellence</h4>
+                  <p>We want our students to stand out everywhere they go. We ensure that they get the best learning experience.</p>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Tabs Section ======= -->
+    <section id="tabs" class="tabs">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="ri-gps-line"></i>
+              <h4 class="d-none d-lg-block">Conducive Learning Environment</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <i class="ri-body-scan-line"></i>
+              <h4 class="d-none d-lg-block">Committed Teachers</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <i class="ri-sun-line"></i>
+              <h4 class="d-none d-lg-block">Libraries and I.C.T Learning</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Recreations and Sport Activities</h4>
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                <h3>Conducive Learning Environment</h3>
+                <p>
+                  A great environment to learn is vital for the easy assimilation of the child, as well as the overall attitude of the child towards learning.
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Well Ventilated Classrooms </li>
+                  <li><i class="ri-check-double-line"></i> Convenient and Aesthetic Environment</li>
+                  <li><i class="ri-check-double-line"></i> Clean restrooms</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/tabs-1.jpg' " alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>We have the best Teachers</h3>
+                <p>
+                  We have the best teachers, who are very committed and willing to give their very best, ensuring that all students excel. We believe that every child has the potential for greatness.
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Great Monitoring</li>
+                  <li><i class="ri-check-double-line"></i> Thorough Assessment</li>
+                  <li><i class="ri-check-double-line"></i> Effective Teaching and Correction</li>
+                  <li><i class="ri-check-double-line"></i> Systematic Approach that promotes understanding</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="static 'assets/img/tabs-2.jpg'" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Libraries and ICT Learning</h3>
+                <p>
+                  We are technology complaint, and we believe that the future is digital. We encourage the use of computers and incorporate computer studies into our curriculum. 
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Conducive Computer Centres</li>
+                  <li><i class="ri-check-double-line"></i> A systematic and approved Computer studies curriculum to capture all areas of interest </li>
+                  <li><i class="ri-check-double-line"></i> Extra-Currilum activities in the areas of Information Technology</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/tabs-3.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Recreational activities and Sports</h3>
+                <p>
+                  We engage our students in a lot of Extra-Currilum activities that are relevant for learning and for relaxation. Cultural days, Sportin events, Career days and other activities help to engage the students in recreationally and in learning.
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Sporting Activities</li>
+                  <li><i class="ri-check-double-line"></i> Special career days, Cultural days and so on</li>
+                  <li><i class="ri-check-double-line"></i> Skill acquisition and extra-currilum activities</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/tabs-4.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Tabs Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg ">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Admission</h2>
+          <p> Admission is on across classes. We have a place for every child</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-briefcase"></i>
+              <h4><a href="{% url 'newsletter' %}">Creche and Daycare</a></h4>
+              <p> You can keep your babies in our safe care</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-briefcase"></i>
+              <h4><a href="{% url 'newsletter' %}">Pre-School</a></h4>
+              <p>Enroll your wards for a beautiful pre-school experience</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-card-checklist"></i>
+              <h4><a href="{% url 'newsletter' %}">Nursery School</a></h4>
+              <p> We have great facilties for the conducive learning of your wards. Enroll today.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-bar-chart"></i>
+              <h4><a href="{% url 'newsletter' %}">Basic School</a></h4>
+              <p>We take advantage of the approved curriculum to give your child an edge</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-binoculars"></i>
+              <h4><a href="{% url 'newsletter' %}">Junior Secondary School</a></h4>
+              <p> We raise Ambassadors by giving a well rounded education</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-brightness-high"></i>
+              <h4><a href="{% url 'newsletter' %}">Senior Secondary School</a></h4>
+              <p> We engage all our students for excellence </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p> This is what some of our parents have to say about us.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Mrs Bassey S.O.</h3>
+                  <h4>RT. Principal of Ejigbo Senior High School</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                     My grandchild was brought to the school when he was 3 years of age. I have been following and checking his books, and I am happy with the academic and moral training that Omolara School is giving to the children. Children in Omolara School can compete favorably with their peers in other schools.
+                     My Prayer is that the Proprietress should not allow pressure from any quarter make her lower the standard that she has set. More grease to your elbow.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Mrs. Ideh Ifeoma C.</h3>
+                  <h4>Accountant</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Services rendered through the staff of Omolara School has been tremendous and productive.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Mrs Achinike Funmilayo</h3>
+                  <h4>Business Owner</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    The experience has been good, the teaching is exceptionally good, the school authority should keep up the good, the school authority should keep up the good work.
+                    Kudos to the management.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="news" class="pricing section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>NEWS POSTS</h2>
+          <p>Check out our most recent news posts</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="fade-up" data-aos-delay="100">
+              <h3>NEWS POST 1</h3>
+              <div class="btn-wrap">
+                <a href="{% url 'news' %}" class="btn-buy">Read Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box featured" data-aos="fade-up" data-aos-delay="200">
+              <h3>NEWS POST 2</h3>
+              <div class="btn-wrap">
+                <a href="{% url 'news' %}" class="btn-buy">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+              <h3>NEWS POST 3</h3>
+              <div class="btn-wrap">
+                <a href="{% url 'news' %}" class="btn-buy">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <ul class="faq-list accordion" data-aos="fade-up">
+
+          <li>
+            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">How can we apply for admission? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                You can reach out to us through any of our contacts, stating your requests and enquiry. Someone will be available to guide you.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed"> What is Montessori? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                It is a system of education for young children that seeks to develop natural interests and activities rather than use formal
+                teaching methods.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed"> Is O.M.S a Montessori School? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Omolara Montessori School is complaint with the montessori method of teaching as we adopt all five methods of montessori principles.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">Are there Boarding facilties available?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Currently, O.M.C is a day school. We are working consistently to make sure we have boarding facilties available for our future students
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed"> Are you a Religious School? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                No, we accept students from all religious background without discrimination.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq6" class="collapsed"> Why Omolara? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                 We believe in the potential within every child just as the name suggests. We are committed to tapping into the unending power within every child for greatness.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Our Executives</h2>
+          <p>Meet some of our executives, and connect with them through their socials</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-1.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://wa.link/5kg2e6" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                  <a href="https://web.facebook.com/me/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/omolaraschoolng/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Engr. Bamidele Adubi</h4>
+                <span>Chairman</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-2.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://wa.link/5kg2e6" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                  <a href="https://web.facebook.com/me/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/omolaraschoolng/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Dcns. Omolara Adubi</h4>
+                <span>Proprietress</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://wa.link/5kg2e6" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                  <a href="https://web.facebook.com/me/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/omolaraschoolng/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Adubi Paul</h4>
+                <span>Administrative Supervisor/ I.T Supervisor</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-4.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-whatsapp"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Adubi Oluwapelumi</h4>
+                <span>Executive Secretary</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p></p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Our Address</h3>
+                  <p>19, Femi Shonaike Street, Isheri-Osun, Fagbile Phase 3, Ijegun, Lagos State.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p><br>omolaramgt@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <p>+234 810 190 4231<br>+234 805 154 2644</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <h4>Join Our Newsletter</h4>
+          <p>Subscribe to our newsletter for news and updates</p>
+          <a href="{% url 'newsletter' %}" class="subscribe">Subscribe Now</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container d-md-flex py-4">
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="https://wa.link/5kg2e6" target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+        <a href="https://web.facebook.com/me/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/omolaraschoolng/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

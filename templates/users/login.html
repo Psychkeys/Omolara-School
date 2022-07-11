@@ -1,0 +1,26 @@
+{% extends 'partials/base.html' %}
+{% block title %} Mail Page {% endblock %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="wrapper">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                    <input type="text" class="form-control" name="username" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password">
+                </div>
+                <button class="btn-newsletter" type="submit">Sign In</button>
+            </form>
+        </fieldset>
+            
+</div>
+{% endblock %}
