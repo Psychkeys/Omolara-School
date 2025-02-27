@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     "users.apps.UsersConfig",
     "crispy_forms",
     "whitenoise.runserver_nostatic",
-    "a_core",
 ]
 
 MIDDLEWARE = [
