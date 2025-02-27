@@ -1,1 +1,1 @@
-web: gunicorn a_core.wsgi
+web: gunicorn django_omolara.wsgi --workers=3
