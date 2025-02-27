@@ -27,9 +27,14 @@ SECRET_KEY = "django-insecure-r)i-!ykg+7*i$(^mpy@k*1o8v)7p^l!)-7b5i791k0=s5s2b!w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["your-railway-app-name.railway.app", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "your-railway-app-name.railway.app",
+    "localhost",
+    "127.0.0.1",
+    "omolaraschool.up.railway.app",
+]
 
-
+CSRF_TRUSTED_ORIGINS = ["https://omolaraschool.up.railway.app"]
 # Application definition
 
 INSTALLED_APPS = [
