@@ -28,14 +28,16 @@ SECRET_KEY = "django-insecure-r)i-!ykg+7*i$(^mpy@k*1o8v)7p^l!)-7b5i791k0=s5s2b!w
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "your-railway-app-name.railway.app",
     "localhost",
     "127.0.0.1",
     "omolaraschool.up.railway.app",
 ]
 
-CSRF_TRUSTED_ORIGINS = ["https://omolaraschool.up.railway.app"]
-# Application definition
+CSRF_TRUSTED_ORIGINS = [
+    "https://omolaraschool.up.railway.app",  # Use HTTPS for production URLs
+    "https://localhost",  # If you're working locally with HTTPS
+]
+
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -53,6 +55,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",  # Add this line before staticfiles
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -61,7 +64,12 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+# If you want to serve compressed static files using Whitenoise
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 ROOT_URLCONF = "django_omolara.urls"
+
+WHITENOISE_SKIP_COMPRESS = True  # Skip files that have issues, like missing source maps
+
 
 TEMPLATES = [
     {
@@ -134,10 +142,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
 
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
-
 STATIC_URL = "/static/"
+
+# For collecting static files into a specific directory
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+
+# The directory where the collected static files will reside
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
